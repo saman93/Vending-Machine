@@ -1,3 +1,30 @@
+/*
+ * Take money from user
+ * Take the order
+ * See if the money is enough
+ * if yes
+ * 		deliver the item
+ * 		change = initial money - cost of item 
+ * else
+ * 		print: not enough money
+ * 		change = initial money
+ * Give back the change
+ * Formula to give back the change in coins:
+ * 			q = (int) (chg / 0.25);
+ *			chg = chg- q*0.25;
+ *			d = (int) (chg / 0.10);
+ *			chg = chg- d*0.10;
+ *			n = (int) (chg / 0.05);
+ *			chg = chg- n*0.05;
+ *			pn = (int) (chg / 0.01);
+ *
+ * q : Quarter
+ * chg : Change
+ * d : Dime
+ * n : Nickle
+ * pn : Penny
+ */
+
 import java.util.Scanner;
 
 public class Main {
